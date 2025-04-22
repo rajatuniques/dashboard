@@ -70,3 +70,41 @@ ul {
 
 /* main content */
 
+.main-content .projects,
+.main-content .accouncement,
+.main-content .trending,
+.main-content .container,
+.container div {
+    border: 4px solid blue;
+    border-radius: 8px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+.projects .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 90%;
+}
+
+.announcement .container {
+    display: grid;
+    height: 90%;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.trending .container {
+    display: grid;
+    height: 90%;
+    grid-template-rows: repeat(4, 1fr);
+}
