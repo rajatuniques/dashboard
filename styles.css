@@ -2,7 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+                              
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 .wrapper {
     border: 4px solid blue;
@@ -15,7 +28,6 @@
 .main-content {
     border: 4px solid blue;
     border-radius: 8px;
-    background-color: rgb(173, 173, 214);
 }
 
 /* grid */
@@ -24,10 +36,12 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    background-color: rgb(217, 217, 217);
 }
 
 .header {
     grid-column: 2 / -1;
+    background-color: white;
 }
 
 .sidebar {
@@ -36,6 +50,8 @@
     font-size: 1.8em;
     grid-template-rows: 1fr repeat(2, 4fr);
     justify-content: center;
+    background-color: #4DEBD8;
+    padding: 4vh;
 }
 
 /* sidebar */
@@ -68,10 +84,14 @@ ul {
     grid-template-columns: 4fr 1fr;
 }
 
+.user-info button {
+    background-color: #4DEBD8;
+}
+
 /* main content */
 
 .main-content .projects,
-.main-content .accouncement,
+.main-content .announcement,
 .main-content .trending,
 .main-content .container,
 .container div {
@@ -95,16 +115,19 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 90%;
+    background-color: white;
 }
 
 .announcement .container {
     display: grid;
     height: 90%;
     grid-template-rows: repeat(3, 1fr);
+    background-color: white;
 }
 
 .trending .container {
     display: grid;
     height: 90%;
     grid-template-rows: repeat(4, 1fr);
+    background-color: white;
 }
