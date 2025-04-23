@@ -18,7 +18,6 @@
 
 
 .wrapper {
-    border: 4px solid blue;
     height: 100vh;
     border-radius: 8px;
 }
@@ -26,7 +25,6 @@
 .header,
 .sidebar,
 .main-content {
-    border: 4px solid blue;
     border-radius: 8px;
 }
 
@@ -64,13 +62,13 @@ ul {
 
 .header {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
 }
 
 .search-bar {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: 8fr 1fr 2fr;
+    grid-template-columns: 1fr 8fr 1fr 2fr;
 }
 
 .search-bar div,
@@ -85,7 +83,7 @@ ul {
 }
 
 .user-info button {
-    background-color: #4DEBD8;
+    background-color: #7bbdb6;
 }
 
 /* main content */
@@ -95,7 +93,6 @@ ul {
 .main-content .trending,
 .main-content .container,
 .container div {
-    border: 4px solid blue;
     border-radius: 8px;
 }
 
@@ -103,6 +100,8 @@ ul {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
 }
 
 .projects {
@@ -114,7 +113,12 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
     height: 90%;
+}
+
+.projects .card {
+    gap: 1.5rem;
     background-color: white;
 }
 
@@ -130,4 +134,43 @@ ul {
     height: 90%;
     grid-template-rows: repeat(4, 1fr);
     background-color: white;
+}
+
+/* icon styling */
+
+.sidebar img {
+    height: 3rem;
+}
+
+.logo .logo{
+    height: 4rem;
+}
+
+.logo p {
+    display: inline;
+    
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    height: 4rem;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.header img {
+    height: 2.5rem;
+}
+
+.main-content img {
+    height: 2rem;
+}
+
+label[for="search"] {
+    display: inline;
+    width: 2rem;
 }
