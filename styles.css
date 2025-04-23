@@ -189,6 +189,7 @@ div.logo {
 
 .header img {
     height: 2.5rem;
+    width: 2rem;
 }
 
 .main-content img {
@@ -198,4 +199,12 @@ div.logo {
 label[for="search"] {
     display: inline;
     width: 2rem;
+
+    
+}
+
+input[type="search"] {
+    border: 0;
+    background-color: rgb(215, 226, 227);
+    border-radius: 40px;
 }
