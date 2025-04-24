@@ -347,6 +347,14 @@ div {
 }
 
 .projects h4,
-h5 {
-    color: black;
+h5,
+.header {
+    color: rgb(4, 68, 79);
 }
+
+.header button,
+.username,
+.search-bar div {
+    color: #6B596A;
+}
+
