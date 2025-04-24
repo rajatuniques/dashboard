@@ -120,13 +120,12 @@ ul li {
 .projects .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 25%);
     gap: 1.5rem;
     height: 90%;
 }
 
 .projects .card {
-    gap: 1.5rem;
     background-color: white;
     border-left: 8px solid #EB4DE1;
 }
@@ -174,7 +173,6 @@ div.logo {
     margin-bottom: 2rem;
     font-weight: 600;
     font-size: 1.2rem;
-
 }
 
 .header img {
@@ -262,4 +260,93 @@ button {
 .username span {
     font-size: 1rem;
     font-weight: 500;
+}
+
+.title {
+    margin-bottom: 8px;
+    font-weight: 550;
+}
+
+.projects .card {
+    font-size: 0.7rem;
+    height: 110%;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.projects button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.button-wrapper {
+    justify-self: end;
+}
+
+.button-wrapper img {
+    height: 1.2rem;
+}
+
+.projects h4 {
+    font-size: 0.9rem;
+}
+
+.announcement .container{
+    padding: 0.5rem;
+    font-size: 0.6rem;
+}
+
+.announcement h5 {
+    font-size: 0.7rem;
+}
+
+.trending img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 25px;
+}
+
+.trending {
+    font-size: 0.8rem;
+}
+
+.trending .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0.5rem;
+    justify-items: start;
+}
+
+.trending img {
+    grid-row: 1 / -1;
+}
+
+.trending p,
+.trending h5 {
+    justify-self: start;
+}
+
+.trending .container {
+    padding: 0 0.8rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+div {
+    color: #6B6759;
+}
+
+.sidebar,
+.sidebar p {
+    color: #343434;
+}
+
+.projects h4,
+h5 {
+    color: black;
 }
